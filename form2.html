@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="cssfile.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Sample form 2</h2>
+<!--
+------------------
+left border red
+new bug - title
+enter title - text
+unassigned - text
+add tag
+------------------
+state
+reason
+area
+iteration
+------------------
+Repro steps
+triage
+state
+reason
+------------------
+take photo | Attach File
+------------------
+Save | Save & close
+------------------
+-->
+  <form>
+      <div class="container formsubmit"> 
+          <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active">
+                  <input type="radio" name="options" id1="option1" autocomplete="off">Save
+              </label>
+              <label class="btn btn-primary active">
+                  <input type="radio" name="options" id1="option2" autocomplete="off">Save & Close
+              </label>
+          </div>
+      </div> 
+      <div class="container songformpart part1">
+        <span>New Track</span>   
+        <div class="form-group">
+                <input type="text" class="form-control" id="songtitle" placeholder="Enter Title">
+        </div>
+        <div class="form-group">
+                <input type="text" class="form-control" id="songcomposer" placeholder="Composed by">
+        </div>
+        <div class="form-group">
+            <div class="songtags col-xs-4">
+                <input type="text" class="form-control songtag" placeholder="Add Tag">
+            </div> 
+        </div>
+      </div>
+      <div class="container songformpart">
+        <div class="form-group">
+            <label for="songtype" class="col-xs-2">State</label>
+            <div class="col-xs-10">
+                <select class="form-control" id="songtype">
+                    <option>Option1</option>
+                    <option>Option2</option>
+                    <option>Opiton3</option>
+                    <option>Option4</option>
+                </select>
+            </div>
+        </div>
+      </div>
+      <div class="container songformpart"> 
+          <div class="form-group">
+            <button class="btn btn-primary col-xs-6 col-lg-6" id="formtakephoto">Take Photo</button>
+            <button class="btn btn-success col-xs-6 col-lg-6" id="formattachfile">Attach File</button>
+        </div> 
+      </div>
+         
+      <div class="container discussions col-xs-12 col-md-12"> 
+          <div>
+              <textarea class="form-control col-xs-12 col-md-12" rows="3" id="discussioncontent" 
+              placeholder="mention @people or #workitem"></textarea>
+          </div>
+      </div>      
+  </form>
+</div>
+</body>
+</html>
+
