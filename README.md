@@ -1,7 +1,8 @@
 # bootstrapexamples
 few bootstrap examples
 
-download
+download &
+
 open html file directly in browser
 (tested only on chrome)
 
